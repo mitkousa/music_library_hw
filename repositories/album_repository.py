@@ -28,7 +28,7 @@ def select(id):
         artist = artist_repository.select(result['artist_id'])
         album = Album(result['title'], result['genre'], artist, result['id'])
 
-    return task
+    return album
 
 
 def delete(id):
